@@ -10,6 +10,9 @@ if ($test == '404') {
 elseif ($test == '500') {
 	error_500();
 }
+elseif ($test == 'redirect') {
+	redirect_to('/public/staff/subjects/index.php');
+}
 else {
 	echo 'no error';
 }
