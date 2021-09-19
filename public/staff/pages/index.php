@@ -13,7 +13,7 @@
 	<div class="content">
 		<div class="listing">
 			<h1>Pages</h1>
-			<table>
+			<table class="list">
 				<tr>
 					<th>id</th>
 					<th>name</th>
@@ -21,9 +21,9 @@
 				</tr>
 				<?php foreach($pages as $page) { ?>
 					<tr>
-						<td><?php echo $page['id'] ?></td>
-						<td><?php echo $page['name'] ?></td>
-						<td><a class="action" href="<?php echo url_for('/staff/pages/new_page.php?id=' . $page['id']); ?>">page</a></td>
+						<td><?php echo htmlchars($page['id']); ?></td>
+						<td><?php echo htmlchars($page['name']); ?></td>
+						<td><a class="action" href="<?php echo url_for('/staff/pages/new_page.php?id=' . htmlchars(urlencode($page['id']))); ?>">page</a></td>
 					</tr>
 				<?php } ?>
 			</table>

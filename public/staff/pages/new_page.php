@@ -1,6 +1,6 @@
 <?php require_once('../../../private/functions.php'); ?>
 
-<a href="index.php">Go back</a><br />
+<a href="index.php">&laquo; Go back</a><br />
 
 <?php
 	$id = $_GET['id'] ?? '1';
