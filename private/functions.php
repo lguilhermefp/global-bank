@@ -13,4 +13,8 @@
 	function raw_u ($string="") {
 		return rawurlencode($string);
 	}
+
+	function htmlchars ($string = "") {
+		return htmlspecialchars($string);
+	}
 ?>

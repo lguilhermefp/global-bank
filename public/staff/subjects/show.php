@@ -1,7 +1,9 @@
+<?php require_once('../../../private/functions.php'); ?>
+
 <?php
 	$id = $_GET['id'] ?? '1';
 
-	echo $id;
+	echo htmlchars($id);
 ?>
 
 <a href="show.php?name=<?php echo urlencode('John Doe'); ?>">Link</a><br />
